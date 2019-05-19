@@ -1,0 +1,23 @@
+{
+  "name": "friendfinder",
+  "version": "1.0.0",
+  "description": "Fill out a survey and get matched with similar people!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/connorleee/FriendFinder.git"
+  },
+  "author": "Connor Lee",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/connorleee/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/connorleee/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.17.0"
+  }
+}
