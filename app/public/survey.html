@@ -18,22 +18,125 @@
 
         <hr>
 
-        <h4><b>About you</b></h4>
-        <p>Name (Required):</p>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-        </div>
-        <p>Link to Photo Image (Required):</p>
-        <div class="input-group mb-3">
-            <input type="text" class="form-control" aria-label="Default" aria-describedby="inputGroup-sizing-default">
-        </div>
+        <form>
+            <h4><b>About you</b></h4>
+            <p>Name (Required):</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="name" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <p>Link to Photo Image (Required):</p>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" id="photo" aria-label="Default"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+        </form>
 
         <hr>
 
-        <h4><b>Question 1</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+        <form>
+            <h4><b>Question 1</b></h4>
+            <p>You are likely to stand the same direction as other people in an elevator</p>
+            <select class="custom-select my-1 mr-sm-2" id="q1">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 2</b></h4>
+            <p>You dislike the sound of a soda can getting opened</p>
+            <select class="custom-select my-1 mr-sm-2" id="q2">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 3</b></h4>
+            <p>You are athletic</p>
+            <select class="custom-select my-1 mr-sm-2" id="q3">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 4</b></h4>
+            <p>You are a musician</p>
+            <select class="custom-select my-1 mr-sm-2" id="q4">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 5</b></h4>
+            <p>You think season 8 of Game of Thrones was excelent</p>
+            <select class="custom-select my-1 mr-sm-2" id="q5">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 6</b></h4>
+            <p>You prefer Mac vs PC</p>
+            <select class="custom-select my-1 mr-sm-2" id="q6">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 7</b></h4>
+            <p>You prefer iOS vs Android</p>
+            <select class="custom-select my-1 mr-sm-2" id="q7">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 8</b></h4>
+            <p>Grilled cheese is a top tier sandwich</p>
+            <select class="custom-select my-1 mr-sm-2" id="q8">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 9</b></h4>
+            <p>Jet fuel melts steel beams</p>
+            <select class="custom-select my-1 mr-sm-2" id="q9">
+                <option selected>Choose...</option>
+                <option value="1">1 (Strongly disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+            </select>
+
+            <h4><b>Question 10</b></h4>
+            <p>Tony Stark > Captain America</p>
+            <select class="custom-select my-1 mr-sm-2" id="q10">
                 <option selected>Choose...</option>
                 <option value="1">1 (Strongly disagree)</option>
                 <option value="2">2</option>
@@ -43,124 +146,29 @@
             </select>
         </form>
 
-        <h4><b>Question 2</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
+        <button type="submit" class="btn btn-primary btn-lg my-1 btn-block" id="submit-data" data-toggle="modal" data-target="#friendModal">Submit</button>
 
-        <h4><b>Question 3</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 4</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 5</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 6</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 7</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 8</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 9</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <h4><b>Question 10</b></h4>
-        <p>Question yaaa</p>
-        <form class="form-inline">
-            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-                <option selected>Choose...</option>
-                <option value="1">1 (Strongly disagree)</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5 (Strongly Agree)</option>
-            </select>
-        </form>
-
-        <button type="submit" class="btn btn-primary btn-lg my-1 btn-block" id="submit">Submit</button>
+        <!-- Modal -->
+        <div class="modal fade" id="friendModal" tabindex="-1" role="dialog" aria-labelledby="friendModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="friendModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <hr>
 
@@ -168,6 +176,9 @@
         |
         <a href="https://github.com/connorleee/FriendFinder">GitHub Repo</a>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>-
+    <script> src="../data/friends.js"</script> 
 </body>
 
 </html>

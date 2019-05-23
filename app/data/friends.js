@@ -21,3 +21,10 @@ let friends = [
 ]
 
 module.exports = friends
+
+console.log("test")
+
+// $("#submit-data").on("click", function(event){
+//     console.log("test")
+//     console.log($("#q1").val())
+// })
