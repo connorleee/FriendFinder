@@ -9,6 +9,7 @@ const app = express();
 
 const PORT = process.env.PORT || 8080;
 
+app.use(express.static("public"));
 app.use("/", htmlRoutes);
 app.use("/api", apiRoutes);
 // app.use(path.join(__dirname, "/style"));
