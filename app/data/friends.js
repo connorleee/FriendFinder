@@ -1,5 +1,3 @@
-const express = require("express");
-
 let friends = [
     // Example entry
     {
@@ -36,9 +34,5 @@ let friends = [
     }
 ]
 
-module.exports = friends
+module.exports = friends;
 
-// $("#submit-data").on("click", function(event){
-//     console.log("test")
-//     console.log($("#q1").val())
-// })
