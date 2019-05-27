@@ -27,7 +27,8 @@ $("#submit-data").click(function () {
 
     $.post("/api/friends", newFriend,
         function (data) {
-            console.log("friend added")
+            // console.log(data)
+
         })
 })
 

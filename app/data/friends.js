@@ -3,7 +3,7 @@ let friends = [
     {
         "name": "Timmy",
         "photo": "https://vignette.wikia.nocookie.net/southpark/images/4/4b/Timmy.png/revision/latest?cb=20171014061716",
-        "scores": [
+        "values": [
             5,
             1,
             4,
@@ -19,7 +19,7 @@ let friends = [
     {
         "name": "Richard",
         "photo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Richard_I_of_England.png/220px-Richard_I_of_England.png",
-        "scores": [
+        "values": [
             3,
             2,
             3,
