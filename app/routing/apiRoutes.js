@@ -8,9 +8,23 @@ router.get('/friends', function (req, res) {
 })
 
 router.post('/friends', function (req, res) {
+    // change request values to integers
+    valInt = []
+    for (let i = 0; i < req.body.values.length; i++) {
+        const el = req.body.values[i];
+        valInt.push(parseInt(el))
+    }
+    console.log(valInt);
+
+    friendObject = {
+        name: req.body.name,
+        photo: req.body.photo,
+        values: valInt
+    }
+
     // Post the survey results to the DB
-    friends.push(req.body);
-    
+    friends.push(friendObject);
+
     // check data against rest of db to find closest match
     // Arr of all total differences
     let comparisonArr = [];
@@ -24,11 +38,11 @@ router.post('/friends', function (req, res) {
     }
     let userTotal = userVal.reduce(getSum);
 
-    for (let i = 0; i < friends.length-1; i++) {
+    for (let i = 0; i < friends.length - 1; i++) {
         const el = friends[i].values;
         let friendTotal = el.reduce(getSum);
 
-        console.log(friendTotal)
+        console.log(friendTotal);
 
         let totDiff = Math.abs(userTotal - friendTotal);
         comparisonArr.push(totDiff);
