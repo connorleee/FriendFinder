@@ -14,7 +14,6 @@ router.post('/friends', function (req, res) {
         const el = req.body.values[i];
         valInt.push(parseInt(el))
     }
-    console.log(valInt);
 
     friendObject = {
         name: req.body.name,
@@ -41,8 +40,6 @@ router.post('/friends', function (req, res) {
     for (let i = 0; i < friends.length - 1; i++) {
         const el = friends[i].values;
         let friendTotal = el.reduce(getSum);
-
-        console.log(friendTotal);
 
         let totDiff = Math.abs(userTotal - friendTotal);
         comparisonArr.push(totDiff);

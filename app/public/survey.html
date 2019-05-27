@@ -27,7 +27,7 @@
 
         <hr>
 
-        <form>
+        <form id="user-info">
             <h4><b>About you</b></h4>
             <p>Name (Required):</p>
             <div class="input-group mb-3">
@@ -43,7 +43,7 @@
 
         <hr>
 
-        <form>
+        <form id="survey-body">
             <h4><b>Question 1</b></h4>
             <p>You are likely to stand the same direction as other people in an elevator</p>
             <select class="custom-select my-1 mr-sm-2" id="q1">
@@ -172,14 +172,14 @@
         <div class="modal-dialog modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalCenterTitle">Your new best friend!</h5>
+                    <h5 class="modal-title" id="exampleModalCenterTitle"><span id="modalTitle"></span></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
                     <span id="new-friend"></span>
-                    <img id="new-friend-img" src="" alt="bff">
+                    <img id="new-friend-img" src="">
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
