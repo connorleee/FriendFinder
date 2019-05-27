@@ -12,8 +12,10 @@ router.post('/friends', function (req, res) {
     friends.push(req.body);
     
     // check data against rest of db to find closest match
+    // Arr of all total differences
     let comparisonArr = [];
 
+    // arr for all user values to integers
     let userVal = [];
     let userData = req.body.values;
     for (let i = 0; i < userData.length; i++) {
@@ -22,27 +24,44 @@ router.post('/friends', function (req, res) {
     }
     let userTotal = userVal.reduce(getSum);
 
-
     for (let i = 0; i < friends.length-1; i++) {
         const el = friends[i].values;
         let friendTotal = el.reduce(getSum);
+
+        console.log(friendTotal)
 
         let totDiff = Math.abs(userTotal - friendTotal);
         comparisonArr.push(totDiff);
     }
 
-    let indexBestFriend = Math.min(comparisonArr)
+    let indexBestFriend = indexOfMin(comparisonArr)
 
     let newBestFriend = friends[indexBestFriend];
 
-    console.log(newBestFriend)
-
-    // res.json(newBestFriend);
+    res.send(newBestFriend);
 })
 
 // used for array sum
 function getSum(total, num) {
     return total + num;
+}
+
+function indexOfMin(arr) {
+    if (arr.length === 0) {
+        return -1;
+    }
+
+    var min = arr[0];
+    var minIndex = 0;
+
+    for (var i = 1; i < arr.length; i++) {
+        if (arr[i] < min) {
+            minIndex = i;
+            min = arr[i];
+        }
+    }
+
+    return minIndex;
 }
 
 module.exports = router

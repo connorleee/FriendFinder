@@ -1,6 +1,6 @@
-let Friend = function (name, pic, values) {
+let Friend = function (name, photo, values) {
     this.name = name,
-        this.pic = pic,
+        this.photo = photo,
         this.values = values
 }
 
@@ -27,7 +27,10 @@ $("#submit-data").click(function () {
 
     $.post("/api/friends", newFriend,
         function (data) {
-            // console.log(data)
+            console.log(data)
+
+            $("#new-friend").text(data.name);
+            $("#new-friend-img").attr("src", data.photo)
 
         })
 })
