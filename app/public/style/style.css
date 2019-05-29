@@ -5,3 +5,30 @@ p {
 form {
     margin-bottom: 2rem;
 }
+
+body {
+    background:
+    radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 50px 0,
+    radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 50px 0,
+    radial-gradient(circle at 50% 59%, #D2CAAB 3%, #364E27 4%, #364E27 11%, rgba(54,78,39,0) 12%, rgba(54,78,39,0)) 0 50px,
+    radial-gradient(circle at 50% 41%, #364E27 3%, #D2CAAB 4%, #D2CAAB 11%, rgba(210,202,171,0) 12%, rgba(210,202,171,0)) 0 50px,
+    radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%),
+    radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%),
+    radial-gradient(circle at 100% 50%, #D2CAAB 16%, rgba(210,202,171,0) 17%) 50px 50px,
+    radial-gradient(circle at 0% 50%, #364E27 16%, rgba(54,78,39,0) 17%) 50px 50px;
+    background-color: firebrick;
+    background-size:100px 100px;
+}
+
+.container {
+    background: rgb(220, 220, 220);
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    margin-top: 5rem;
+
+    border-radius: 1rem;
+}
+
+h4 {
+    margin-top: 1rem!important;
+}
